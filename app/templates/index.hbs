@@ -3,5 +3,7 @@
 <p>Ask a question, or find a sutable question and provide the sought after answer.</p>
 
 <div id="questions">
-  
+  {{#each model as |question|}}
+    {{question-tile question=question}}
+  {{/each}}
 </div>
