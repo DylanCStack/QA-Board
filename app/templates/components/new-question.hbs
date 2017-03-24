@@ -1,0 +1,19 @@
+{{#if addNewQuestion}}
+<button class="btn btn-md btn-warning"{{action "questionFormHide"}}>Hide this form</button>
+  <form>
+    <div class="form-group">
+      <label for="author">Your Name</label>
+      {{input value="author" id="author"}}
+    </div>
+    <div class="form-group">
+      <label for="subject">General subject of your question</label>
+      {{input value="subject" id="subject"}}
+    </div>
+    <div class="form-group">
+      <label for="body">Any additional explination or supplimentary questions</label>
+      {{input value="body" id="body"}}
+    </div>
+  </form>
+{{else}}
+  <button class="btn btn-md btn-success"{{action "questionFormShow"}}>Ask a question</button>
+{{/if}}
