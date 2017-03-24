@@ -1,0 +1,16 @@
+{{#if updateAnswerForm}}
+  <button class="btn btn-xs btn-warning" {{action "updateAnswerFormHide"}}>Hide this form</button>
+  <form>
+    <div class="form-group">
+      <label for="author">Your name</label>
+      {{input value=author id=author class="form-control"}}
+    </div>
+    <div class="form-group">
+      <label for="content">The content of your answer</label>
+      {{input value=content id=content class="form-control"}}
+    </div>
+    <button class="btn btn-md btn-success" {{action "updateAnswer" question}}>Edit</button>
+  </form>
+{{else}}
+  <button class="btn btn-md btn-success" {{action "updateAnswerFormShow"}}>Edit this answer</button>
+{{/if}}

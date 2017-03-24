@@ -1,4 +1,5 @@
 <div class="answer">
+  {{update-answer question=question updateAnswer="updateAnswer"}}
   <h4>{{answer.author}}</h4>
   <p>{{answer.content}}</p>
   <button class="btn btn-xs btn-danger" {{action "deleteAnswer" answer question}}>Delete</button>
