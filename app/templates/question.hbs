@@ -8,3 +8,8 @@
 </div>
 
 {{new-answer question=model saveAnswer="saveAnswer"}}
+
+{{#each model.answers as |answer|}}
+  {{answer-tile answer=answer}}
+  <!-- later add delete and update answer actions -->
+{{/each}}
