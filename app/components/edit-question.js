@@ -16,7 +16,7 @@ export default Ember.Component.extend({
         inquiry: this.get("inquiry"),
         body: this.get("body")
       };
-      this.set("addNewQuestion", false);
+      this.set("updateQuestionForm", false);
       this.sendAction("updateQuestion", question, params);
     }
 
