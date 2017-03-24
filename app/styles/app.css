@@ -31,3 +31,12 @@ form {
   right:15px;
   bottom:10px;
 }
+
+li {
+  list-style: none;
+  padding-left: 10px;
+  float:left;
+}
+ul {
+  min-height: 45px;
+}

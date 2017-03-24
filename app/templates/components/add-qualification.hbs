@@ -1,0 +1,8 @@
+{{#if addNewQualification}}
+<div class="form-group">
+  <input class="newQualifications form-control">
+  {{add-qualification}}
+</div>
+{{else}}
+<button class="btn btn-xs btn-inverse" {{action "addQualificationShow"}}>+</button>
+{{/if}}

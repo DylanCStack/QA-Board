@@ -2,5 +2,13 @@
   {{update-answer question=question answer=answer updateAnswer="updateAnswer"}}
   <h4>{{answer.author}}</h4>
   <p>{{answer.content}}</p>
+  {{#if answer.qualifications}}
+  <ul>
+      <h5>My qualifications</h5>
+  {{#each-in answer.qualifications as |qualification|}}
+    <li>{{qualification}}</li>
+  {{/each-in}}
+  </ul>
+  {{/if}}
   <button class="btn btn-xs btn-danger" {{action "deleteAnswer" answer question}}>Delete</button>
 </div>

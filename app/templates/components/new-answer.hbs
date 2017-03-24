@@ -9,6 +9,8 @@
       <label for="content">The content of your answer</label>
       {{input value=content id=content class="form-control"}}
     </div>
+    <h4>Add your qualifications, if applicable.</h4>
+    {{add-qualification}}
     <button class="btn btn-md btn-success" {{action "saveAnswer" question}}>Answer</button>
   </form>
 {{else}}
