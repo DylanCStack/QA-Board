@@ -9,8 +9,13 @@ export default Ember.Component.extend({
     updateAnswerFormHide(){
       this.set("updateAnswerForm",false);
     },
-    updateAnswer(){
-      
+    updateAnswer(answer, question){
+      var params = {
+        author: this.get("author"),
+        content: this.get("content")
+      };
+      this.set("updateAnswerForm", false);
+      this.sendAction("updateAnswer", params, answer, question);
     }
   }
 });

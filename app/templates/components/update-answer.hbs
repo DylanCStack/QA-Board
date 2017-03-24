@@ -9,7 +9,7 @@
       <label for="content">The content of your answer</label>
       {{input value=content id=content class="form-control"}}
     </div>
-    <button class="btn btn-md btn-success" {{action "updateAnswer" question}}>Edit</button>
+    <button class="btn btn-md btn-success" {{action "updateAnswer" answer question}}>Edit</button>
   </form>
 {{else}}
   <button class="btn btn-md btn-success" {{action "updateAnswerFormShow"}}>Edit this answer</button>
