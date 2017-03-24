@@ -6,11 +6,19 @@ export default Ember.Route.extend({
   },
   actions: {
     deleteQuestion(question){
-      question.destroyRecord();
-      this.transitionTo("index");
+      if(confirm("Are you sure you want to delete this question? Leaving it may help someone else find and answer in the future.")){
+        question.destroyRecord();
+        this.transitionTo("index");
+      }
     },
-    updateQuestion(){
-      
-    }
+    updateQuestion(question, params){
+      Object.keys(params).forEach(function(key){
+        if(params[key]!==undefined){
+          question.set(key,params[key]);
+        }
+      });
+      question.save();
+      this.transitionTo('index');
+    },
   }
 });

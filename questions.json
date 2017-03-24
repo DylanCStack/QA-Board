@@ -1,19 +1,19 @@
 { "questions": [{
     "author": "Dylan Stackhouse",
     "subject": "Programming",
-    "question": "Why doesn't everyone user Ember.js?",
+    "inquiry": "Why doesn't everyone user Ember.js?",
     "body": "It just seems like such a fanstastic framework. It does things that usually take many components or modules and does it for you. It just works and I do not get why everyone doesn't use it."
   },
   {
     "author": "Starbucks Barista",
     "subject": "Finance",
-    "question": "How can we make more money from the epicodus students?",
+    "inquiry": "How can we make more money from the epicodus students?",
     "body": "Epicodus students come to our shop in droves every day, almost as if they depend on us to be functining developers. I figure there has to be a way to make more of a profit from this situation. Any Ideas?"
   },
   {
     "author": "Literally Everyone",
     "subject": "Programming",
-    "question": "How do I vertically center something in CSS?",
+    "inquiry": "How do I vertically center something in CSS?",
     "body": "I just got back from my multi-month trip to various tibetan monestaries to learn the secrets of horizontally centering something in CSS. However, I am still lost as to how to center vertically. I am beginning to lose hope. Someone please help..."
   }]
 }

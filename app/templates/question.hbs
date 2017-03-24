@@ -1,8 +1,8 @@
 <div class="question">
-  {{edit-question question=question updateQuestion="updateQuestion"}}
+  {{edit-question question=model updateQuestion="updateQuestion"}}
   <h4>{{model.author}}</h4>
   <h5>in {{model.subject}}</h5>
-  <h4>{{model.question}}</h4>
+  <h4>{{model.inquiry}}</h4>
   <p>{{model.body}}</p>
   <button class="btn btn-xs btn-danger" {{action "deleteQuestion" model}}>Delete</button>
 </div>

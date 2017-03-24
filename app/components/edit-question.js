@@ -2,12 +2,22 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   actions: {
-    updateQuestion: false,
+    updateQuestionForm: false,
     updateQuestionFormShow(){
-      this.set("updateQuestion",true);
+      this.set("updateQuestionForm",true);
     },
     updateQuestionFormHide(){
-      this.set("updateQuestion",false);
+      this.set("updateQuestionForm",false);
+    },
+    updateQuestion(question){
+      var params = {
+        author: this.get("author"),
+        subject: this.get("subject"),
+        inquiry: this.get("inquiry"),
+        body: this.get("body")
+      };
+      this.set("addNewQuestion", false);
+      this.sendAction("updateQuestion", question, params);
     }
 
   }

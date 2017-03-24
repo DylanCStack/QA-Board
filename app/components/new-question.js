@@ -13,7 +13,7 @@ export default Ember.Component.extend({
       var params = {
         author: this.get("author"),
         subject: this.get("subject"),
-        question: this.get("question"),
+        inquiry: this.get("inquiry"),
         body: this.get("body")
       };
       this.set("addNewQuestion", false);

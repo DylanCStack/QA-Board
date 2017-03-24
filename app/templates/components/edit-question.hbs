@@ -1,4 +1,4 @@
-{{#if updateQuestion}}
+{{#if updateQuestionForm}}
 <hr>
 <button class="btn btn-xs btn-warning"{{action "updateQuestionFormHide"}}>Hide this form</button>
 <form>
@@ -12,13 +12,13 @@
   </div>
   <div class="form-group">
     <label for="question">Your question</label>
-    {{input value=question.question id="question" class="form-control"}}
+    {{input value=question.inquiry id="question" class="form-control"}}
   </div>
   <div class="form-group">
     <label for="body">Any additional explination or supplimentary questions</label>
     {{input value=question.body id="body" class="form-control"}}
   </div>
-  <button class="btn btn-md btn-info" {{action "updateQuestion"}}>Update</button>
+  <button class="btn btn-md btn-info" {{action "updateQuestion" question}}>Update</button>
 </form>
 <hr>
 {{else}}
