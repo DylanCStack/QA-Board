@@ -1,0 +1,26 @@
+{{#if updateQuestion}}
+<hr>
+<button class="btn btn-xs btn-warning"{{action "updateQuestionFormHide"}}>Hide this form</button>
+<form>
+  <div class="form-group">
+    <label for="author">Your Name</label>
+    {{input value=question.author id="author" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="subject">General subject of your question</label>
+    {{input value=question.subject id="subject" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="question">Your question</label>
+    {{input value=question.question id="question" class="form-control"}}
+  </div>
+  <div class="form-group">
+    <label for="body">Any additional explination or supplimentary questions</label>
+    {{input value=question.body id="body" class="form-control"}}
+  </div>
+  <button class="btn btn-md btn-info" {{action "updateQuestion"}}>Update</button>
+</form>
+<hr>
+{{else}}
+  <button class="btn btn-md btn-warning"{{action "updateQuestionFormShow"}}>Edit</button>
+{{/if}}
