@@ -15,10 +15,11 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+* `git clone https://github.com/DylanCStack/QA-Board.git` this repository
 * `cd qa-board`
 * `npm install`
 * `bower install`
+* `ember serve`
 
 ## Running / Development
 
@@ -66,7 +67,7 @@ You will need the following things properly installed on your computer.
 4. UX/UI
   * Bootstrap will be used for standard features, including navbar, buttons, forms, ect.
   * Custom styling will be used to format and structure display of questions and answers.
-  
+
 5. Polish/add
   * If able, answers will be able to tag "qualifications". These qualifications will be added and displayed recursively
 
